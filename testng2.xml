@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNG suite for SQLrest">
+	<test name="PUT creation test">
+		<classes>
+		    <class name="sqlrest.PutTest"></class>
+		</classes>
+	</test>
+	<test name="POST updating test">
+		<classes>
+		    <class name="sqlrest.PostTest">
+		        <methods>
+		            <include name = "updateProductPrice" />
+		        </methods>
+		    </class>
+		</classes>
+	</test>
+
+	<test name="DELETE test">
+		<classes>
+		    <class name="sqlrest.DeleteTest"></class>
+		</classes>
+	</test>
+		 <test name="GET test">
+		<classes>
+		    <class name="sqlrest.GetTest"></class>
+		</classes>
+	</test>
+</suite>

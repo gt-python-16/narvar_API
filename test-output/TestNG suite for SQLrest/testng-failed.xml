@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG suite for SQLrest]">
+  <test name="GET test(failed)">
+    <classes>
+      <class name="sqlrest.PostTest">
+        <methods>
+          <include name="before"/>
+        </methods>
+      </class> <!-- sqlrest.PostTest -->
+      <class name="sqlrest.DeleteTest">
+        <methods>
+          <include name="before"/>
+        </methods>
+      </class> <!-- sqlrest.DeleteTest -->
+      <class name="sqlrest.GetTest">
+        <methods>
+          <include name="checkProductNotExists" invocation-numbers="0 1 2 3"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- sqlrest.GetTest -->
+    </classes>
+  </test> <!-- GET test(failed) -->
+</suite> <!-- Failed suite [TestNG suite for SQLrest] -->
